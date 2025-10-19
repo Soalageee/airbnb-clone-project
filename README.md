@@ -114,6 +114,36 @@ Key fields: `id`, `booking_id`, `amount`, `payment_method`, `status`, `created_a
 
 ---
 
+## API Security
+
+Securing the Airbnb Clone backend is essential to protect user data, property information, and payment details. The following measures will be implemented to ensure a safe and trustworthy application:
+
+### **Authentication**
+All users must securely log in before accessing protected resources.  
+This prevents unauthorized access to personal accounts and sensitive information.
+
+### **Authorization**
+Different access levels ensure that users can only perform actions allowed for their role (e.g., guests, hosts, admins).  
+It protects the system from misuse and enforces proper data access rules.
+
+### **Rate Limiting**
+Limits the number of requests a user can make in a given period.  
+This prevents abuse, mitigates potential denial-of-service (DoS) attacks, and ensures stable performance.
+
+### **Data Encryption**
+Sensitive information such as passwords and payment details are encrypted in storage and during transmission.  
+Encryption safeguards user privacy and prevents data leaks.
+
+### **Input Validation & Sanitization**
+All incoming data is validated and sanitized before processing.  
+This helps prevent common attacks such as SQL injection, cross-site scripting (XSS), and other malicious inputs.
+
+### **Secure Payment Handling**
+Payments are processed using trusted gateways with secure protocols.  
+This ensures that financial transactions remain private, accurate, and tamper-proof.
+
+---
+
 ## Team Roles
 This project is developed collaboratively as part of the **ALX Backend Prodev Cohort**, involving:
 - **Backend Developers:** API endpoints and business logic.
