@@ -44,6 +44,46 @@ Containerizes the application for consistent development and deployment.
 
 ---
 
+## Database Design
+
+The Airbnb Clone backend uses a relational database (PostgreSQL) to manage users, properties, bookings, reviews, and payments. Below is an overview of the main entities and their relationships.
+
+### **Users**
+Key fields: `id`, `name`, `email`, `password`, `role`  
+- Represents individuals using the platform as guests or hosts.  
+- A user can have multiple properties (if they are a host) and multiple bookings (if they are a guest).
+
+### **Properties**
+Key fields: `id`, `host_id`, `title`, `description`, `price`, `location`  
+- Represents listings available for booking.  
+- Each property belongs to a single host (user) and can have multiple bookings and reviews.
+
+### **Bookings**
+Key fields: `id`, `user_id`, `property_id`, `check_in`, `check_out`, `status`  
+- Represents a reservation made by a user for a property.  
+- Each booking belongs to one user (guest) and one property.
+
+### **Reviews**
+Key fields: `id`, `user_id`, `property_id`, `rating`, `comment`, `created_at`  
+- Represents feedback left by users for properties they stayed at.  
+- Each review is associated with one user and one property.
+
+### **Payments**
+Key fields: `id`, `booking_id`, `amount`, `payment_method`, `status`, `created_at`  
+- Represents transactions made by users for bookings.  
+- Each payment is linked to a single booking and, indirectly, to a user and property.
+
+---
+
+### **Entity Relationships**
+- **User ↔ Property:** One-to-Many (a user can host multiple properties)  
+- **User ↔ Booking:** One-to-Many (a user can make multiple bookings)  
+- **Property ↔ Booking:** One-to-Many (a property can have multiple bookings)  
+- **Property ↔ Review:** One-to-Many (a property can have multiple reviews)  
+- **Booking ↔ Payment:** One-to-One (each booking has one payment record)
+
+---
+
 ## API Overview
 | Module | Endpoints | Description |
 |---------|------------|-------------|
