@@ -144,7 +144,7 @@ This ensures that financial transactions remain private, accurate, and tamper-pr
 
 ---
 
-## 🚀 CI/CD Pipeline
+## CI/CD Pipeline
 
 Continuous Integration (CI) and Continuous Deployment (CD) pipelines automate the process of building, testing, and deploying code.  
 They ensure that new changes are integrated smoothly, bugs are caught early, and updates reach production reliably.
