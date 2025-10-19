@@ -18,12 +18,19 @@ This backend forms the foundation of the entire system, handling user authentica
 
 ---
 
-## Tech Stack
+## Technology Stack
 **Backend:** Django, Django REST Framework  
+A Python web framework used to build the backend and RESTful APIs. 
+Provides tools to create and manage RESTful APIs efficiently.  
 **Database:** PostgreSQL  
+A relational database for storing users, properties, bookings, and reviews.  
 **API Design:** REST + GraphQL  
+Offers flexible and efficient querying of backend data. 
 **Task Management:** Celery, Redis  
+Handles asynchronous tasks like notifications and payment processing. 
+Used for caching and session management to improve performance.   
 **Containerization:** Docker  
+Containerizes the application for consistent development and deployment. 
 **CI/CD:** Automated testing and deployment pipelines
 
 ---
