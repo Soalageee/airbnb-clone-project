@@ -48,12 +48,20 @@ This backend forms the foundation of the entire system, handling user authentica
 
 ---
 
-## Roles & Collaboration
+## Team Roles
 This project is developed collaboratively as part of the **ALX Backend Prodev Cohort**, involving:
-- **Backend Developers:** API endpoints and business logic.  
+- **Backend Developers:** API endpoints and business logic.
+Implements the application’s logic, APIs, and database interactions.  
+In this project, backend developers handle core modules such as authentication, property management, bookings, payments, and reviews, ensuring everything runs efficiently and securely.  
 - **Database Admins:** Schema design and query optimization.  
-- **DevOps Engineers:** Deployment, monitoring, and scaling.  
+Designs, manages, and optimizes the database layer.  
+They ensure data consistency, performance, and reliability—especially as the application scales and handles more users and listings.
+- **DevOps Engineers:** Deployment, monitoring, and scaling. 
+Bridges development and operations to streamline the release process.  
+They set up and maintain CI/CD pipelines, monitor deployments, and automate workflows so that updates reach production quickly and safely. 
 - **QA Engineers:** Testing for performance, reliability, and usability.
+Tests the application to make sure it works as expected.  
+They check both functionality and performance, identify bugs early, and confirm that every release meets quality standards.
 
 ---
 
