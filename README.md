@@ -35,12 +35,31 @@ Containerizes the application for consistent development and deployment.
 
 ---
 
-## Features
-- **Comprehensive API:** Built with Django REST Framework and documented using OpenAPI.  
-- **Flexible Queries:** GraphQL layer for efficient and customizable data retrieval.  
-- **Caching & Optimization:** Redis and database indexing for better performance.  
-- **Asynchronous Processing:** Celery handles background tasks like notifications and payments.  
-- **Secure Authentication:** Token-based user access and session management.
+## Feature Breakdown
+
+### **User Management**
+Handles registration, authentication, and profile management for both guests and hosts.  
+This feature ensures that users can securely sign up, log in, and manage their personal information, providing a foundation for personalized interactions and bookings.
+
+### **Property Management**
+Allows hosts to create, update, and manage property listings.  
+Users can view property details, photos, pricing, and availability, making it easy to browse and select accommodations.
+
+### **Booking System**
+Enables guests to reserve properties and manage their reservations.  
+It handles check-in/check-out dates, booking status, and availability, ensuring a smooth and reliable reservation process.
+
+### **Payment Processing**
+Facilitates secure transactions for bookings.  
+This feature records payment details, tracks payment status, and integrates with payment gateways to process guest payments safely.
+
+### **Review System**
+Allows guests to leave feedback and ratings for properties they stayed at.  
+Reviews help future guests make informed decisions and provide hosts with valuable insights to improve their offerings.
+
+### **API Documentation**
+Provides clear documentation of all available endpoints using OpenAPI standards and GraphQL queries.  
+It helps developers and integrators understand how to interact with the backend efficiently.
 
 ---
 
