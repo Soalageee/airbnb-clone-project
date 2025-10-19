@@ -144,6 +144,16 @@ This ensures that financial transactions remain private, accurate, and tamper-pr
 
 ---
 
+## 🚀 CI/CD Pipeline
+
+Continuous Integration (CI) and Continuous Deployment (CD) pipelines automate the process of building, testing, and deploying code.  
+They ensure that new changes are integrated smoothly, bugs are caught early, and updates reach production reliably.
+
+For the Airbnb Clone project, the CI/CD pipeline helps maintain code quality, reduces manual errors, and speeds up delivery.  
+Tools such as **GitHub Actions** can automate testing and deployment, **Docker** ensures consistent environments, and other monitoring tools can track the health of the application after deployment.
+
+---
+
 ## Team Roles
 This project is developed collaboratively as part of the **ALX Backend Prodev Cohort**, involving:
 - **Backend Developers:** API endpoints and business logic.
